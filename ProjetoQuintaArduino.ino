@@ -92,15 +92,14 @@ int  alarmeSeguranca;
 double temperatura, umidade;
 
 double atualizacao_dados;  // Variável para contagem de Dados a cada 2 segundos.
-
-// Variável do tipo vetor que armazenará as TAGS cadastradas do RFID.
+// Variável do tio vetor que armazenará as TAGS cadastradas do RFID.
 String tagsCadastradass[2] = {"26 F1 F4 48", "B3 61 8C A9"};
 
 // ===== Método que será executada uma vez quando ligar ou resetar o Arduino.  ==============================================================================================
 void setup()
 {
   // --- Habilita comunicações do Arduino ---
-  Serial.begin(9600);    // Inicia Taxa de Comunicação Serial de 9600 bits por segundo.
+  Serial.begin(9600);    // Inicia Taxa de Comunicação Serial de 9600 bits (Baud Rate 2400 baud x 4 bits por baud = 9600 bps) por segundo.
   SPI.begin();           // Inicia Protocolo de Comunicação SPI.
   Wire.begin();          // Inicia Protocolo de Comunicação I2C.
 
@@ -459,14 +458,14 @@ void Acesso_RFID() {
   {
     // Se Tag aproximada é cadastrada liga Led de acesso Liberado e Relé para acionamento de trava eletrônica.
     digitalWrite(Led_RFID_Liberado, HIGH);
-    digitalWrite(rele_RFID_Liberado, LOW);
+    digitalWrite(rele_RFID_Liberado, HIGH);
     delay(400);
     digitalWrite(Led_RFID_Liberado, LOW);
-    digitalWrite(rele_RFID_Liberado, HIGH);
+    digitalWrite(rele_RFID_Liberado, LOW);
   }
   else
   {
-    digitalWrite(rele_RFID_Liberado, HIGH);
+    digitalWrite(rele_RFID_Liberado, LOW);
     digitalWrite(Led_RFID_Negado, HIGH);
     delay(400);
     digitalWrite(Led_RFID_Negado, LOW);
