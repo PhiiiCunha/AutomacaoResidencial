@@ -69,16 +69,19 @@ COMPONENTES
 - Fios diversos(Jumpers M/M e M/F)   
 - Resistores diversos   
 - Botões   
-- Buzzer   
+- Buzzer 
+
+CIRCUITO ELÉTRICO
+
+![alt text](https://raw.githubusercontent.com/PhiiiCunha/AutomacaoResidencial/branch/path/to/circuito_eletrico.png)
 
 CONCLUSÃO   
 Este artigo buscou apresentar o desenvolvimento de um sistema de baixo custo, que automatize os processos residenciais, com utilização do microcontrolador Arduino Mega e seus sensores e módulos ( RFID, RTC, DHT11, etc).   
 Fica claro a evidencia que é possível automatizar uma residência sem ter que investir muito, pois, além da variedade de preços dos equipamentos, cada projeto em si tem sua particularidade e complexidade própria. Vale ressaltar também que, todo o equipamento eletrônico está exposto e sujeito a falhas e contra tempos decorrentes a defeitos de fábrica, interferências, falhas na comunicação e curto circuito. Na parte lógica, podem ocorrer falhas de programação ou entendimento lógico errado.   
    
-REFERÊNCIAS BIBLIOGRÁFICAS   
+REFERÊNCIAS BIBLIOGRÁFICAS 
    
-   
-HTTP://WWW.OPENCULTURE.COM/2011/01/ARDUINO_DOCUMENTARY_OPEN_SOURCE_HAR DWARE_IS_HERE.HTML   
+HTTP://WWW.OPENCULTURE.COM/2011/01/ARDUINO_DOCUMENTARY_OPEN_SOURCE_HARDWARE_IS_HERE.HTML   
    
 HTTPS://PT.WIKIPEDIA.ORG/WIKI/ARDUINO   
    
