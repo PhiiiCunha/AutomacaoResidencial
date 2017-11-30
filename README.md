@@ -73,7 +73,7 @@ COMPONENTES
 
 CIRCUITO ELÉTRICO
 
-![ScreenShot](https://raw.github.com/PhiiiCunha/AutomacaoResidencial/branch/path/circuito_eletrico.png)
+![circuito_eletrico](https://user-images.githubusercontent.com/26335789/33458762-99dfb2b0-d60e-11e7-8fd7-b217de9287f3.png)
 
 CONCLUSÃO   
 Este artigo buscou apresentar o desenvolvimento de um sistema de baixo custo, que automatize os processos residenciais, com utilização do microcontrolador Arduino Mega e seus sensores e módulos ( RFID, RTC, DHT11, etc).   
